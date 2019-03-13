@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>connects</servlet-name>
+        <servlet-class>main.connects</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>dispImage</servlet-name>
+        <servlet-class>main.dispImage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>gallery</servlet-name>
+        <servlet-class>main.gallery</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>past</servlet-name>
+        <servlet-class>main.past</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>connects</servlet-name>
+        <url-pattern>/connects</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dispImage</servlet-name>
+        <url-pattern>/dispImage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>gallery</servlet-name>
+        <url-pattern>/gallery</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>past</servlet-name>
+        <url-pattern>/past</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
